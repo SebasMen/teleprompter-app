@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+@layer base {
+  :root {
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  }
+
+  .input-text {
+    @apply w-full text-sm leading-6 text-gray-900 py-1.5 px-2 mt-2 border-0 rounded-md ring-1 ring-inset ring-gray-300 shadow-sm placeholder:text-gray-400 focus:ring-inset focus:ring-indigo-600;
+  }
 }

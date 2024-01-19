@@ -6,7 +6,9 @@ export const AuthLayout = () => {
       <div className="w-1/2 bg-banner-auth bg-no-repeat bg-cover"></div>
 
       <div className="w-1/2 flex flex-col items-center justify-center p-4">
-        <h1 className="text-5xl text-center">Welcome to My Teleprompter</h1>
+        <h1 className="text-2xl text-center mb-12 uppercase">
+          <span className="text-5xl">Welcome To</span><br />My Teleprompter
+        </h1>
 
         <Outlet />
       </div>
